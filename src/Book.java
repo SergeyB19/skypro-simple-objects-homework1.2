@@ -1,10 +1,28 @@
 public class Book {
-    int publicationYear = 1900;
-    public Book(String firstName, String middleName, int publicationYear ) {
-        this.firstName = firstName;
-        this.middleName = middleName;
-        this.publicationYear = publicationYear;
+    String bookName;
+    Author author;
+    int publishingYear;
 
-        Book Book = new Book("Steven", "King", 1900);
+    public Book(String bookName, Author author, int publishingYear) {
+        this.author = author;
+        this.bookName = bookName;
+        this.publishingYear = publishingYear;
+
+    }
+
+    public String getBookName() {
+        return this.bookName;
+    }
+
+    public Author getAuthor() {
+        return this.author;
+    }
+
+    public int getPublishingYear() {
+        return this.publishingYear;
+    }
+
+    public void setPublishingYear(int new_year) {
+        this.publishingYear = new_year;
     }
 }
